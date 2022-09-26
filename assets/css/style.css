@@ -147,3 +147,33 @@ section .option_cards {
     background-position: center;
     background-size: contain;
 }
+
+/* Footer */
+
+footer {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #06283D;
+}
+
+.social-networks {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-networks>li {
+    display: inline;
+    margin-top: 15px;
+}
+
+.social-networks a {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    text-decoration: none;
+    list-style-type: none;
+    color: #47B5FF;
+}
