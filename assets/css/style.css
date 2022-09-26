@@ -280,3 +280,80 @@ form [type="submit"] {
     color: white;
     font-weight: bold;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        background-position: top;
+        background-size: 150%;
+    }
+
+    .menu ul {
+        margin-right: 2rem;
+    }
+
+    .menu li {
+        margin-right: 16px;
+    }
+
+    .info_cards {
+        justify-content: space-around;
+        margin-top: 18rem;
+    }
+
+    .infotext {
+        font-size: 10px;
+    }
+
+    /* History and Trophie Room page */
+
+    .history {
+        margin: 5% 0%;
+        height: 700px;
+    }
+
+    .clogo img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .htext p {
+        max-width: 950px;
+        max-height: 500px;
+        line-height: 22px;
+        font-size: 15px;
+        overflow: scroll;
+    }
+
+    /* Sign Up page */
+
+    main {
+        width: 80%;
+        height: 400px;
+        margin: 126px auto;
+
+        background-color: rgba(6, 40, 61, 0.7);
+    }
+
+    aside h2 {
+        font-size: 40px;
+    }
+
+    aside p {
+        margin-top: 8px;
+        line-height: 18px;
+        max-width: 320px;
+    }
+
+    main span {
+        width: 2px;
+        height: 300px;
+    }
+
+    img {
+        width: 312px;
+    }
+
+}
