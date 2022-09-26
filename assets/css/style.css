@@ -177,3 +177,33 @@ footer {
     list-style-type: none;
     color: #47B5FF;
 }
+
+/* History and Trophies section*/
+.history {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    background: rgba(6, 40, 61, 0.7);
+}
+
+.history span {
+    margin: 206px 15px;
+    width: 1px;
+    height: 450px;
+    background-color: #fff;
+}
+
+.clogo img {
+    width: 250px;
+    height: 250px;
+}
+
+.htext p {
+    max-width: 1200px;
+    line-height: 24px;
+    font-size: 17px;
+    text-align: justify;
+    font-family: Lato, sans-serif;
+    color: #fff;
+}
