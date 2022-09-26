@@ -428,7 +428,6 @@ form [type="submit"] {
 @media screen and (max-width:425px) {
     body {
         background-position: top;
-        background-size: 342%;
     }
 
     nav {
@@ -443,6 +442,9 @@ form [type="submit"] {
         gap: 15px;
     }
 
+    section .option_cards{
+        bottom: 5%;
+    }
     .option_cards {
         flex-direction: column;
         align-items: center;
