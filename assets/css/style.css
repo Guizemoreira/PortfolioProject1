@@ -360,8 +360,8 @@ form [type="submit"] {
 
 @media screen and (max-width:768px) {
     body {
-        background-position: top;
-        background-size: 400%;
+        background-position: center;
+        background-size: 250%;
     }
 
     .menu ul {
@@ -428,7 +428,7 @@ form [type="submit"] {
 @media screen and (max-width:425px) {
     body {
         background-position: top;
-        background-size: 342%;
+        background-size: cover;
     }
 
     nav {
