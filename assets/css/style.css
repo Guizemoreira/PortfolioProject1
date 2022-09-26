@@ -357,3 +357,70 @@ form [type="submit"] {
     }
 
 }
+
+@media screen and (max-width:768px) {
+    body {
+        background-position: top;
+        background-size: 400%;
+    }
+
+    .menu ul {
+        margin-right: 1rem;
+    }
+
+    .menu li {
+        margin-right: 8px;
+    }
+
+    .info_cards {
+        justify-content: space-around;
+        margin-top: 20rem;
+    }
+
+    .infotext {
+        font-size: 8px;
+    }
+
+    /* History and Trophie Room page */
+
+    .history {
+        margin: 5% 0%;
+        height: 600px;
+    }
+
+    .history span {
+        height: 400px;
+    }
+
+    .clogo img {
+        width: 215px;
+        height: 215px;
+    }
+
+    .htext p {
+        max-width: 950px;
+        max-height: 400px;
+        line-height: 22px;
+        font-size: 15px;
+        overflow: scroll;
+    }
+
+    /* Sign Up page */
+
+    main {
+        width: 95%;
+    }
+
+    aside h2 {
+        font-size: 36px;
+        line-height: 16px;
+    }
+
+    aside p {
+        line-height: 18px;
+    }
+
+    img {
+        width: 304px;
+    }
+}
