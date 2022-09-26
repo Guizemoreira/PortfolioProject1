@@ -51,3 +51,42 @@ header {
     display: flex;
     color: #06283D;
 }
+
+/* Information cards section */
+
+.info_cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 29rem;
+}
+
+.divinfo {
+    display: inline-flex;
+}
+
+.infologo {
+    width: 95px;
+    height: 70px;
+    border-radius: 15px;
+    margin-right: 12px;
+    background-color: #fff;
+}
+
+.infologo img {
+    width: 95px;
+    height: 70px;
+}
+
+.infotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
