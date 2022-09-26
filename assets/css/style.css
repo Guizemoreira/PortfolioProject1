@@ -90,3 +90,60 @@ header {
     font-size: 12px;
     font-weight: bold;
 }
+
+/* Option Cards */
+
+section .option_cards {
+    position: absolute;
+    bottom: 6%;
+}
+
+.option_cards {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#card1,
+#card2,
+#card3 {
+    width: 32%;
+    float: left;
+    padding: 30px 0 0 10px;
+    background-color: rgba(6, 40, 61, 0.6);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.option_cards a {
+    text-decoration: none;
+    color: #47B5FF;
+}
+
+#card1 {
+    background-image: url(../pics/hand-drawing-doodle-book-illustration-icon-continuous-line-style-vector-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+#card2 {
+    background-image: url(../pics/vetor-trophies\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#card3 {
+    background-image: url(../pics/teste2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
