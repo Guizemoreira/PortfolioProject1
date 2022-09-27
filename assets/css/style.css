@@ -10,7 +10,7 @@ body {
     background: url(../pics/wallp.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: stretch;
 }
 
 /*Navigation bar and menu*/
@@ -54,13 +54,24 @@ header {
 
 /* Information cards section */
 
+.maindiv {
+    margin: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+    position: relative;
+    bottom: -410px;
+}
+
 .info_cards {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 29rem;
+    /*margin-top: 29rem;*/
 }
 
 .divinfo {
@@ -91,7 +102,7 @@ header {
     font-weight: bold;
 }
 
-/* Option Cards */
+/* Display cards */
 
 section .option_cards {
     position: absolute;
@@ -281,14 +292,7 @@ form [type="submit"] {
     font-weight: bold;
 }
 
-/* Media Queries */
-
 @media screen and (max-width: 1024px) {
-
-    body {
-        background-position: top;
-        background-size: 342%;
-    }
 
     .menu ul {
         margin-right: 2rem;
@@ -298,13 +302,8 @@ form [type="submit"] {
         margin-right: 16px;
     }
 
-    .info_cards {
-        justify-content: space-around;
-        margin-top: 18rem;
-    }
-
-    .infotext {
-        font-size: 10px;
+    .maindiv {
+        bottom: -320px;
     }
 
     /* History and Trophie Room page */
@@ -359,10 +358,6 @@ form [type="submit"] {
 }
 
 @media screen and (max-width:768px) {
-    body {
-        background-position: center;
-        background-size: 400%;
-    }
 
     .menu ul {
         margin-right: 1rem;
@@ -370,11 +365,6 @@ form [type="submit"] {
 
     .menu li {
         margin-right: 8px;
-    }
-
-    .info_cards {
-        justify-content: space-around;
-        margin-top: 20rem;
     }
 
     .infotext {
@@ -402,6 +392,7 @@ form [type="submit"] {
         max-height: 400px;
         line-height: 22px;
         font-size: 15px;
+        margin-right: 24px;
         overflow: scroll;
     }
 
@@ -426,136 +417,38 @@ form [type="submit"] {
 }
 
 @media screen and (max-width:425px) {
-    body {
-        background-position: top;
-    }
 
     nav {
         display: none;
     }
 
-    .info_cards {
-        flex-direction: column;
-        align-items: baseline;
-        margin-top: 5.5rem;
-        margin-left: 8px;
-        gap: 15px;
+    .maindiv {
+        position: unset;
     }
 
-    section .option_cards{
-        bottom: 5%;
+    .info_cards {
+        margin-top: 10%;
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: unset;
+        gap: 12px;
+        background-color: rgba(6, 40, 61, 0.6);
     }
+
     .option_cards {
         flex-direction: column;
-        align-items: center;
-        height: auto;
     }
 
     #card1,
     #card2,
     #card3 {
-        width: 100%;
-        height: 75px;
-    }
-
-    .infotext {
-        font-size: 8px;
-    }
-
-    /* History and Trophie Room page */
-
-    .history {
-        display: flex;
-        flex-direction: column;
-        margin: 5% 0%;
-        height: 600px;
-    }
-
-    .history span {
-        width: 400px;
-        height: 1px;
-        margin: 0px 0px 10px 0px;
-    }
-
-    .clogo img {
-        width: 205px;
-        height: 205px;
-    }
-
-    .htext p {
-        max-width: 950px;
-        max-height: 350px;
-        line-height: 20px;
-        font-size: 13px;
-        margin: 0px 24px;
-        overflow: scroll;
-    }
-
-    /* Sign Up page */
-    main {
-        width: 90%;
-        height: 650px;
-        flex-direction: column-reverse;
-        margin: 126px auto;
-    }
-
-    aside h2 {
-        font-size: 26px;
-        line-height: 12px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    aside p {
-        max-width: 300px;
-    }
-
-    main span {
-        width: 350px;
-        height: 2px;
-        margin: 7px 0px 15px 0px;
-    }
-
-    img {
-        width: 284px;
-        margin: auto;
-    }
-
-    input {
-        width: 125%;
-    }
-
-}
-
-@media screen and (max-width:375px) {
-    body {
-        background-position: top;
-        background-size: 405%;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .info_cards {
-        flex-direction: column;
-        align-items: baseline;
-        margin-top: 5.5rem;
-        margin-left: 8px;
-        gap: 15px;
-    }
-
-    .option_cards {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    #card1,
-    #card2,
-    #card3 {
-        width: 100%;
-        height: 75px;
+        background-color: rgba(6, 40, 61, 0.7);
+        background-image: none;
+        width: 325px;
+        border: 2px solid #47B5FF;
+        border-radius: 20px;
+        margin: 0% 5%;
+        padding: 20px;
     }
 
     .infotext {
