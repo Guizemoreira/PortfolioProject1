@@ -424,6 +424,7 @@ form [type="submit"] {
 
     .maindiv {
         position: unset;
+        overflow: scroll;
     }
 
     .info_cards {
